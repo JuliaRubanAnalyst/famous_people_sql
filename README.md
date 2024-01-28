@@ -28,6 +28,18 @@ This project demonstrates the use of SQL relational databases by creating tables
 | ... | ...                    | ... |
 
 
-## Example Queries
+## Queries
 - Query to list the movies a specific actor has starred in.
 - Query to check if two actors are married.
+
+## Example Query Results
+### List the movies 'Jane Smith'
+| Title                  |
+|------------------------|
+| Mystery of the Forest  |
+| Night in the City      |
+
+### Check for 'Patricia Robinson' and 'Robert Walker'
+| Married |
+|---------|
+| Yes     |
