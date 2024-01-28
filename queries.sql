@@ -68,3 +68,14 @@ INSERT INTO marriages (star1_id, star2_id) VALUES (4, 5);
 INSERT INTO marriages (star1_id, star2_id) VALUES (6, 7);
 INSERT INTO marriages (star1_id, star2_id) VALUES (8, 9);
 INSERT INTO marriages (star1_id, star2_id) VALUES (10, 1);
+
+SELECT m.title FROM movies m
+JOIN star_movies sm ON m.id = sm.movie_id
+WHERE sm.star_id = (SELECT id FROM movie_stars WHERE name = 'Jane Smith');
+
+SELECT 
+  CASE 
+    WHEN EXISTS (SELECT * FROM marriages WHERE star1_id = (SELECT id FROM movie_stars WHERE name = 'Patricia Robinson') AND star2_id = (SELECT id FROM movie_stars WHERE name = 'Robert Walker'))
+    THEN 'Yes'
+    ELSE 'No'
+  END AS Married;
