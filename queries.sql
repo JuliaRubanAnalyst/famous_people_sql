@@ -16,4 +16,20 @@ INSERT INTO movie_stars (name, age) VALUES ('Chris Garcia', 27);
 INSERT INTO movie_stars (name, age) VALUES ('Patricia Robinson', 32);
 INSERT INTO movie_stars (name, age) VALUES ('Robert Walker', 29);
 
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    year INTEGER
+);
+
+INSERT INTO movies (title, year) VALUES ('The Unseen Journey', 2020);
+INSERT INTO movies (title, year) VALUES ('Beyond the Horizon', 2018);
+INSERT INTO movies (title, year) VALUES ('Mystery of the Forest', 2021);
+INSERT INTO movies (title, year) VALUES ('Night in the City', 2019);
+INSERT INTO movies (title, year) VALUES ('Lost in Dreams', 2022);
+INSERT INTO movies (title, year) VALUES ('Echoes of the Past', 2017);
+INSERT INTO movies (title, year) VALUES ('Chasing Shadows', 2023);
+INSERT INTO movies (title, year) VALUES ('Secrets of the Deep', 2020);
+INSERT INTO movies (title, year) VALUES ('Whispers in the Dark', 2021);
+INSERT INTO movies (title, year) VALUES ('Skyward Bound', 2018);
 
