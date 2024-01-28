@@ -33,3 +33,38 @@ INSERT INTO movies (title, year) VALUES ('Secrets of the Deep', 2020);
 INSERT INTO movies (title, year) VALUES ('Whispers in the Dark', 2021);
 INSERT INTO movies (title, year) VALUES ('Skyward Bound', 2018);
 
+CREATE TABLE star_movies (
+    star_id INTEGER,
+    movie_id INTEGER,
+    FOREIGN KEY (star_id) REFERENCES movie_stars(id),
+    FOREIGN KEY (movie_id) REFERENCES movies(id)
+);
+
+INSERT INTO star_movies (star_id, movie_id) VALUES (1, 1);
+INSERT INTO star_movies (star_id, movie_id) VALUES (2, 2);
+INSERT INTO star_movies (star_id, movie_id) VALUES (3, 3);
+INSERT INTO star_movies (star_id, movie_id) VALUES (4, 4);
+INSERT INTO star_movies (star_id, movie_id) VALUES (5, 5);
+INSERT INTO star_movies (star_id, movie_id) VALUES (1, 6);
+INSERT INTO star_movies (star_id, movie_id) VALUES (2, 7);
+INSERT INTO star_movies (star_id, movie_id) VALUES (3, 8);
+INSERT INTO star_movies (star_id, movie_id) VALUES (4, 9);
+INSERT INTO star_movies (star_id, movie_id) VALUES (5, 10);
+
+CREATE TABLE marriages (
+    star1_id INTEGER,
+    star2_id INTEGER,
+    FOREIGN KEY (star1_id) REFERENCES movie_stars(id),
+    FOREIGN KEY (star2_id) REFERENCES movie_stars(id)
+);
+
+INSERT INTO marriages (star1_id, star2_id) VALUES (1, 2);
+INSERT INTO marriages (star1_id, star2_id) VALUES (3, 4);
+INSERT INTO marriages (star1_id, star2_id) VALUES (5, 6);
+INSERT INTO marriages (star1_id, star2_id) VALUES (7, 8);
+INSERT INTO marriages (star1_id, star2_id) VALUES (9, 10);
+INSERT INTO marriages (star1_id, star2_id) VALUES (2, 3);
+INSERT INTO marriages (star1_id, star2_id) VALUES (4, 5);
+INSERT INTO marriages (star1_id, star2_id) VALUES (6, 7);
+INSERT INTO marriages (star1_id, star2_id) VALUES (8, 9);
+INSERT INTO marriages (star1_id, star2_id) VALUES (10, 1);
