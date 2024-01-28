@@ -11,7 +11,7 @@ This project demonstrates the use of SQL relational databases by creating tables
 
 ## Example tables
 
-### Таблица `movie_stars`
+### Table `movie_stars`
 | ID | Name            | Age |
 |----|-----------------|-----|
 | 1  | John Doe        | 35  |
@@ -19,7 +19,7 @@ This project demonstrates the use of SQL relational databases by creating tables
 | 3  | Emily Johnson   | 40  |
 | ... | ...             | ... |
 
-### Таблица `movies`
+### Table `movies`
 | ID | Title                  | Year |
 |----|------------------------|------|
 | 1  | The Unseen Journey     | 2020 |
